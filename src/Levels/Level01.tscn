@@ -38,6 +38,7 @@ tile_data = PoolIntArray( 65535, 0, 0, 96, 0, 0, 131071, 0, 0, 65613, 1, 0, 6561
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 200, 760 )
+stomp_impulse = 600.0
 
 [node name="Camera2D" parent="Player" index="0"]
 limit_right = 7760

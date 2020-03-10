@@ -6,10 +6,6 @@
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Objects/Portal2D.tscn" type="PackedScene" id=5]
 
-
-
-
-
 [node name="LevelTemplate" type="Node2D"]
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
@@ -23,7 +19,6 @@ expand = true
 stretch_mode = 2
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 
 [node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 2 )]
 
@@ -37,10 +32,10 @@ tile_data = PoolIntArray( 0, 0, 0, 23, 0, 0, 65536, 0, 0, 65559, 0, 0, 131072, 0
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 885.108, 800 )
+stomp_impulse = 600.0
 
 [node name="Portal2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1750, 800 )
-next_level_scene = "res://src/levels/Level02.tscn"
 
 [node name="Coins" type="Node2D" parent="."]
 
